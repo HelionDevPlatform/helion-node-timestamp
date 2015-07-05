@@ -1,22 +1,16 @@
 # Write out the current datetime to a file 'timestamp.txt'
 
 import datetime
+import os
 
+
+username = os.environ["USER"]
 timestamp = datetime.datetime.now()
-datetime_format = '%Y-%m-%d %H:%M:%S'
+datetime_format = '%Y-%m-%d_%H.%M.%S'
 formatted_time = timestamp.strftime(datetime_format)
-print formatted_time
+stamp = formatted_time + '_' + username
+print stamp
 
 f = open('timestamp.txt', 'w')
-f.write(formatted_time)
+f.write(stamp)
 f.close()
-
-print '# Reading section...'
-f = open('timestamp.txt', 'r')
-line = f.readline()
-
-print line
-
-print 'parsed:'
-parsed_datetime = datetime.datetime.strptime(line, datetime_format)
-print str(parsed_datetime)
