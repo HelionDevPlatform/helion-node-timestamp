@@ -1,0 +1,36 @@
+{
+  "name": "helion-node-timestamp",
+  "version": "1.0.0",
+  "description": "Simple node app that returns the current date/time.",
+  "engines": {
+    "node": "0.12.x",
+    "npm":  "2.x"
+  },
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js",
+    "update-timestamp": "node updateTimestamp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelionDevPlatform/helion-node-timestamp.git"
+  },
+  "keywords": [
+    "helion",
+    "test",
+    "helionci"
+  ],
+  "author": "neilotoole",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/HelionDevPlatform/helion-node-timestamp.git/issues"
+  },
+  "homepage": "https://github.com/HelionDevPlatform/helion-node-timestamp.git#readme",
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
+
+
+

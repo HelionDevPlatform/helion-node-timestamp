@@ -1,2 +1,2 @@
-# helion-node-timestamp
-Simple node server that returns the timestamp specified in a file
+# node-timestamp
+Simple node app that returns the current date/time.
